@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoboreal"> <!-- Fondo personalizado -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"> <!-- Centra los botones en la pantalla -->
+
+        <!-- Botón para el Registro de Mascota -->
+        <Button
+            android:id="@+id/btnRegistroMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de Mascota"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FF8000"
+            android:textColor="@android:color/white"/>
+
+        <!-- Botón para Cuidado e Higiene -->
+        <Button
+            android:id="@+id/btnCuidadoHigiene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cuidado e Higiene"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FF8000"
+            android:textColor="@android:color/white"/>
+
+        <!-- Botón para Alimentación y Nutrición -->
+        <Button
+            android:id="@+id/btnAlimentacionNutricion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alimentación y Nutrición"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#FF8000"
+            android:textColor="@android:color/white"/>
+
+        <!-- Botón para Dar Opinión -->
+        <Button
+            android:id="@+id/btnOpinion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dar Opinión"
+            android:backgroundTint="#FF8000"
+            android:textColor="@android:color/white"/>
+
+        <!-- Botón para Ver Mascotas Registradas -->
+        <Button
+            android:id="@+id/btnVerMascotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver Mascotas Registradas"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FF8000"
+            android:textColor="@android:color/white"/>
+
+        <!-- Botón para Mapa de Centros de Belleza -->
+        <Button
+            android:id="@+id/btnMapaCentrosBelleza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mapa de Centros de Belleza"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FF8000"
+            android:textColor="@android:color/white"/>
+
+        <!-- Botón para Chatbot -->
+        <Button
+            android:id="@+id/btnChatbot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chatbot"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FF8000"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</RelativeLayout>

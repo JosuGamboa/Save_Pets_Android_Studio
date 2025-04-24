@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comparte tu opinión"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona el tipo de servicio:"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgTipoServicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbCentroBelleza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centro de Belleza"/>
+
+            <RadioButton
+                android:id="@+id/rbGuarderia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardería"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etNombreLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:hint="Nombre del centro o guardería"
+            android:background="@android:drawable/editbox_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calificación:"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etOpinion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe tu opinión aquí..."
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:gravity="top"
+            android:background="@android:drawable/editbox_background"/>
+
+        <Button
+            android:id="@+id/btnEnviarOpinion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar Opinión"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
